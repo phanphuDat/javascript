@@ -69,7 +69,4 @@ demoClick.onclick = function print_current_page() {
 
 // ! START 3
 
-
-
 // * END EXERCISE 3 HERE
-

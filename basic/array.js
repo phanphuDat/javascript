@@ -66,8 +66,9 @@ console.log(languages.length)
 
 // 8. concat    -> noi mang
 // 9. slice     -> cat thanh mang con
-const subArray = languages.slice(2,3)
-// console.log(subArray);
+// console.log(languages);
+const subArray = languages.slice(2)
+console.log(subArray);
 
 
 
