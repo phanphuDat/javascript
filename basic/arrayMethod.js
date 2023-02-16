@@ -1,6 +1,7 @@
 /**
  *  array method:
- * 1. forEach()  -- duyệt qua các phần tử mảng
+ * 1. forEach( 
+ * )  -- duyệt qua các phần tử mảng
  * 2. every()   -- kiểm tra tất cả các phần tử mảng thỏa mản gì đó
  * 3. some()    -- kiểm tra các phần tử mảng chỉ cần có cá thỏa mãn là dừng
  * 4. find()    -- tiềm phần tử trong mảng xem có tồn tại hk và trả về đối tượng đó
@@ -78,6 +79,7 @@ console.log(course)
 
 // })
 //cách 2: tạo hàm xử lý ở ngoài rồi gọi vào
+console.log('----------------------------------------------------------------');
 function courseHandler(eleCourse, index) {
     return {
         id: eleCourse.id,
@@ -93,6 +95,7 @@ console.log(newCourses1)
 
 //7     -- lấy ra tổng số coin của khóa học.
 //cách 1: dùng vòng lặp for - of.
+console.log('----------------------------------------------------------------');
 var totalCoin = 0
 for(var course of courses) {
     totalCoin += course.coin
@@ -100,6 +103,7 @@ for(var course of courses) {
 
 console.log(totalCoin)
 //cách 2: reduce
+console.log('----------------------------------------------------------------');
 var i = 0
 function coinHandler(accumulator, currentValue, currentIndex, originArray) {
     i++
@@ -116,7 +120,7 @@ var totalCoin1 = courses.reduce(coinHandler, 0) // 0 là giá trị khởi tạo
 console.log(totalCoin1)
 
 // thật sự nó chỉ ngắn thế này thôi
-
+console.log('----------------------------------------------------------------');
 var totalCoin2 = courses.reduce(function(accumulator,currentValue){
     return accumulator + currentValue.coin;
 }, 0)
